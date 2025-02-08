@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC381A672D3A94B800EDE182 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC381A662D3A94B800EDE182 /* ARKit.framework */; };
+		FC66337B2D40879C00A39C27 /* SurrealTouchSDK in Frameworks */ = {isa = PBXBuildFile; productRef = FC66337A2D40879C00A39C27 /* SurrealTouchSDK */; };
+		FC66338D2D40892E00A39C27 /* SurrealTouchSDK in Frameworks */ = {isa = PBXBuildFile; productRef = FC66338C2D40892E00A39C27 /* SurrealTouchSDK */; };
+		FCC183452D31052300653F0F /* RealityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC183332D3103CE00653F0F /* RealityKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCEE7C6F2D27D1AA006DB6FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCEE7C512D27D1A9006DB6FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCEE7C582D27D1A9006DB6FA;
+			remoteInfo = SDK_usage_test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC381A662D3A94B800EDE182 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		FCC183332D3103CE00653F0F /* RealityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealityKit.framework; path = System/Library/Frameworks/RealityKit.framework; sourceTree = SDKROOT; };
+		FCEE7C592D27D1A9006DB6FA /* Swift-SDK-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-SDK-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCEE7C5D2D27D1A9006DB6FA /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		FCEE7C6E2D27D1AA006DB6FA /* Swift-SDK-exampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-SDK-exampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FCEE7C742D27D1AA006DB6FA /* Exceptions for "Swift-SDK-example" folder in "Swift-SDK-example" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FCEE7C582D27D1A9006DB6FA /* Swift-SDK-example */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FCEE7C5B2D27D1A9006DB6FA /* Swift-SDK-example */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FCEE7C742D27D1AA006DB6FA /* Exceptions for "Swift-SDK-example" folder in "Swift-SDK-example" target */,
+			);
+			path = "Swift-SDK-example";
+			sourceTree = "<group>";
+		};
+		FCEE7C712D27D1AA006DB6FA /* Swift-SDK-exampleTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Swift-SDK-exampleTests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCC182F72D2FE1D700653F0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC381A672D3A94B800EDE182 /* ARKit.framework in Frameworks */,
+				FC66337B2D40879C00A39C27 /* SurrealTouchSDK in Frameworks */,
+				FC66338D2D40892E00A39C27 /* SurrealTouchSDK in Frameworks */,
+				FCC183452D31052300653F0F /* RealityKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEE7C6B2D27D1AA006DB6FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCC183322D3103CE00653F0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC381A662D3A94B800EDE182 /* ARKit.framework */,
+				FCC183332D3103CE00653F0F /* RealityKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCEE7C502D27D1A9006DB6FA = {
+			isa = PBXGroup;
+			children = (
+				FCEE7C5B2D27D1A9006DB6FA /* Swift-SDK-example */,
+				FCEE7C5C2D27D1A9006DB6FA /* Packages */,
+				FCEE7C712D27D1AA006DB6FA /* Swift-SDK-exampleTests */,
+				FCC183322D3103CE00653F0F /* Frameworks */,
+				FCEE7C5A2D27D1A9006DB6FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCEE7C5A2D27D1A9006DB6FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCEE7C592D27D1A9006DB6FA /* Swift-SDK-example.app */,
+				FCEE7C6E2D27D1AA006DB6FA /* Swift-SDK-exampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCEE7C5C2D27D1A9006DB6FA /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				FCEE7C5D2D27D1A9006DB6FA /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCEE7C582D27D1A9006DB6FA /* Swift-SDK-example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCEE7C752D27D1AA006DB6FA /* Build configuration list for PBXNativeTarget "Swift-SDK-example" */;
+			buildPhases = (
+				FCEE7C552D27D1A9006DB6FA /* Sources */,
+				FCEE7C572D27D1A9006DB6FA /* Resources */,
+				FCC182F72D2FE1D700653F0F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FCEE7C5B2D27D1A9006DB6FA /* Swift-SDK-example */,
+			);
+			name = "Swift-SDK-example";
+			packageProductDependencies = (
+				FC66337A2D40879C00A39C27 /* SurrealTouchSDK */,
+				FC66338C2D40892E00A39C27 /* SurrealTouchSDK */,
+			);
+			productName = SDK_usage_test;
+			productReference = FCEE7C592D27D1A9006DB6FA /* Swift-SDK-example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCEE7C6D2D27D1AA006DB6FA /* Swift-SDK-exampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCEE7C7A2D27D1AA006DB6FA /* Build configuration list for PBXNativeTarget "Swift-SDK-exampleTests" */;
+			buildPhases = (
+				FCEE7C6A2D27D1AA006DB6FA /* Sources */,
+				FCEE7C6B2D27D1AA006DB6FA /* Frameworks */,
+				FCEE7C6C2D27D1AA006DB6FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCEE7C702D27D1AA006DB6FA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FCEE7C712D27D1AA006DB6FA /* Swift-SDK-exampleTests */,
+			);
+			name = "Swift-SDK-exampleTests";
+			packageProductDependencies = (
+			);
+			productName = SDK_usage_testTests;
+			productReference = FCEE7C6E2D27D1AA006DB6FA /* Swift-SDK-exampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCEE7C512D27D1A9006DB6FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					FCEE7C582D27D1A9006DB6FA = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					FCEE7C6D2D27D1AA006DB6FA = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = FCEE7C582D27D1A9006DB6FA;
+					};
+				};
+			};
+			buildConfigurationList = FCEE7C542D27D1A9006DB6FA /* Build configuration list for PBXProject "Swift-SDK-example" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCEE7C502D27D1A9006DB6FA;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FCC183462D31059000653F0F /* XCLocalSwiftPackageReference "Packages/RealityKitContent" */,
+				FC66338B2D40892E00A39C27 /* XCLocalSwiftPackageReference "../../SwiftSDK" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FCEE7C5A2D27D1A9006DB6FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCEE7C582D27D1A9006DB6FA /* Swift-SDK-example */,
+				FCEE7C6D2D27D1AA006DB6FA /* Swift-SDK-exampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCEE7C572D27D1A9006DB6FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEE7C6C2D27D1AA006DB6FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCEE7C552D27D1A9006DB6FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCEE7C6A2D27D1AA006DB6FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCEE7C702D27D1AA006DB6FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCEE7C582D27D1A9006DB6FA /* Swift-SDK-example */;
+			targetProxy = FCEE7C6F2D27D1AA006DB6FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FCEE7C762D27D1AA006DB6FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "Swift-SDK-example/Preview\\ Content";
+				DEVELOPMENT_TEAM = 5M2M47L6B4;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = x86_64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Surreal Interactive SDK";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "connect to controller";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "connect to controller";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "SurrealInteractive.Swift-SDK-example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		FCEE7C772D27D1AA006DB6FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "Swift-SDK-example/Preview\\ Content";
+				DEVELOPMENT_TEAM = 5M2M47L6B4;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = x86_64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Surreal Interactive SDK";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "connect to controller";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "connect to controller";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "SurrealInteractive.Swift-SDK-example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		FCEE7C782D27D1AA006DB6FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		FCEE7C792D27D1AA006DB6FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		FCEE7C7B2D27D1AA006DB6FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5M2M47L6B4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SurrealInteractive.SDK-usage-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift-SDK-example.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swift-SDK-example";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		FCEE7C7C2D27D1AA006DB6FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5M2M47L6B4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SurrealInteractive.SDK-usage-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift-SDK-example.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swift-SDK-example";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCEE7C542D27D1A9006DB6FA /* Build configuration list for PBXProject "Swift-SDK-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEE7C782D27D1AA006DB6FA /* Debug */,
+				FCEE7C792D27D1AA006DB6FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCEE7C752D27D1AA006DB6FA /* Build configuration list for PBXNativeTarget "Swift-SDK-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEE7C762D27D1AA006DB6FA /* Debug */,
+				FCEE7C772D27D1AA006DB6FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCEE7C7A2D27D1AA006DB6FA /* Build configuration list for PBXNativeTarget "Swift-SDK-exampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCEE7C7B2D27D1AA006DB6FA /* Debug */,
+				FCEE7C7C2D27D1AA006DB6FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		FC66338B2D40892E00A39C27 /* XCLocalSwiftPackageReference "../../SwiftSDK" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../SwiftSDK;
+		};
+		FCC183462D31059000653F0F /* XCLocalSwiftPackageReference "Packages/RealityKitContent" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/RealityKitContent;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FC66337A2D40879C00A39C27 /* SurrealTouchSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SurrealTouchSDK;
+		};
+		FC66338C2D40892E00A39C27 /* SurrealTouchSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SurrealTouchSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FCEE7C512D27D1A9006DB6FA /* Project object */;
+}

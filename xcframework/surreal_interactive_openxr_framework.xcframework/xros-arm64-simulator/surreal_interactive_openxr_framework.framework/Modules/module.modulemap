@@ -1,0 +1,10 @@
+framework module surreal_interactive_openxr_framework {
+  umbrella header "surreal_interactive_openxr_framework.h"
+  export *
+  module * { export * }
+  link "m"
+  link "pthread"
+  link framework "ARKit"
+  link framework "CoreBluetooth"
+  link framework "Foundation"
+}
