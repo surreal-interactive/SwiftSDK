@@ -84,7 +84,7 @@ class AppModel {
      var enable_right_haptic : Bool = false
     
     public init() {
-        let xr_instance = xr.Instance()
+        let xr_instance : xr.Instance = xr.Instance.create()
         let xr_session = xr_instance.createSession()
         let xr_action_set = xr_instance.createActionSet(actionSetName: "ControllerInput", localizedActionSetName: "Controller Input Set")
         
@@ -197,6 +197,7 @@ class AppModel {
         
         left_haptic_action =  xr_left_haptic_action
         right_haptic_action = xr_right_haptic_action
+        
         
     }
     

@@ -42,8 +42,8 @@ struct SampleView : View {
                             VStack {
                                 Text("Trigger: \(appModel.left_trigger_state)")
                                 Text("Grip: \(appModel.left_grip_state)")
-                                Text("Thumbstick X: \(appModel.left_thumbstick_x_state)")
-                                Text("Thumbstick Y: \(appModel.left_thumbstick_y_state)")
+                                Text("ThumbStick X: \(appModel.left_thumbstick_x_state)")
+                                Text("ThumbStick Y: \(appModel.left_thumbstick_y_state)")
                             }
                         }
                     }
@@ -60,8 +60,8 @@ struct SampleView : View {
                             VStack {
                                 Text("Trigger: \(appModel.right_trigger_state)")
                                 Text("Grip: \(appModel.right_grip_state)")
-                                Text("Thumbstick X: \(appModel.right_thumbstick_x_state)")
-                                Text("Thumbstick Y: \(appModel.right_thumbstick_y_state)")
+                                Text("ThumbStick X: \(appModel.right_thumbstick_x_state)")
+                                Text("ThumbStick Y: \(appModel.right_thumbstick_y_state)")
                             }
                         }
                     }
