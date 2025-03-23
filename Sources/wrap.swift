@@ -28,7 +28,6 @@ public enum xr {
             referenceSpaceCI.poseInReferenceSpace = XrPosef(orientation: XrQuaternionf(x: 0.0, y: 0.0, z: 0.0, w: 1.0), position: XrVector3f(x: 0.0, y: 0.0, z: 0.0))
             
             xrCreateReferenceSpace(session, &referenceSpaceCI, &local_space)
-            print("create session ptr \(session)")
         }
         
         public func attachActionSet(actionSet : [ActionSet]) {
@@ -61,7 +60,6 @@ public enum xr {
         }
         
         deinit {
-            print("deinit session ptr \(session)")
             xrDestroySession(session)
             session = nil
         }
@@ -140,11 +138,6 @@ public enum xr {
         
         public func stringToPath(path_string:String) -> Path {
             return Path(instance:self, path_string: path_string)
-        }
-        
-        public func reset () {
-            xrDestroyInstance(instance)
-            instance = nil
         }
         
         deinit {
