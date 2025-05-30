@@ -13,12 +13,12 @@ let package = Package(
             targets: ["SurrealInteractiveSDK"]),
     ],
     dependencies: [
-        .package(path: "xcframework"),
+        .package(url: "https://github.com/surreal-interactive/SwiftSDKBinary.git", branch: ("master")),
     ],
     targets: [
         .target(name: "SurrealInteractiveSDK",
                 dependencies:[
-                    .product(name:"openxr-framework", package:"xcframework")
+                    .product(name:"openxr-framework", package:"SwiftSDKBinary")
                 ],
                 cSettings: [],
                 linkerSettings:[
